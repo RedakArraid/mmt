@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{font-family:'Manrope',system-ui,sans-serif;color:#16212B;background:#FFFFFF;-webkit-font-smoothing:antialiased}
+    image-slot{display:block;width:100%;height:100%}
+  </style>
+</helmet>
+
+<div style="width:100%">
+
+  <!-- TOP BAR -->
+  <div data-screen-label="top-bar" style="background:#16212B;color:#cdd3d8;font-size:13px;letter-spacing:.01em">
+    <div style="max-width:1240px;margin:0 auto;padding:9px 32px;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap">
+      <div style="display:flex;gap:24px;align-items:center;flex-wrap:wrap">
+        <span style="display:flex;align-items:center;gap:8px"><span style="color:#F2711C">●</span> Abidjan, Côte d'Ivoire</span>
+        <span style="opacity:.5">|</span>
+        <span>+225 27 20 00 00 00</span>
+        <span style="opacity:.5">|</span>
+        <span>contact@mamanmerci-transport.ci</span>
+      </div>
+      <div style="display:flex;gap:20px;align-items:center">
+        <a href="#suivi" style="color:#cdd3d8;text-decoration:none;display:flex;align-items:center;gap:7px"><span style="color:#157A3C">▸</span> Suivi d'expédition</a>
+        <span style="border:1px solid #39434c;padding:3px 9px;border-radius:3px;font-weight:600;color:#fff">FR</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header style="position:sticky;top:0;z-index:50;background:#FFFFFF;border-bottom:1px solid #eceae3;box-shadow:0 1px 12px rgba(22,33,43,.04)">
+    <div style="max-width:1240px;margin:0 auto;padding:14px 32px;display:flex;justify-content:space-between;align-items:center;gap:32px">
+      <a href="#accueil" style="display:flex;align-items:center;text-decoration:none;flex-shrink:0">
+        <img src="assets/flotte-mmt2.png" alt="Maman Merci Transport" style="height:118px;width:auto;display:block;object-fit:cover">
+      </a>
+      <nav style="display:flex;gap:30px;align-items:center;font-weight:600;font-size:15px">
+        <a href="#services" style="color:#16212B;text-decoration:none">Services</a>
+        <a href="#secteurs" style="color:#16212B;text-decoration:none">Secteurs</a>
+        <a href="#reseau" style="color:#16212B;text-decoration:none">Réseau</a>
+        <a href="#apropos" style="color:#16212B;text-decoration:none">À propos</a>
+        <a href="#contact" style="color:#16212B;text-decoration:none">Contact</a>
+      </nav>
+      <a href="#contact" style="background:#157A3C;color:#fff;text-decoration:none;font-weight:700;font-size:15px;padding:12px 22px;border-radius:11px;flex-shrink:0;box-shadow:0 8px 20px rgba(21,122,60,.18)">Demander un devis</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="accueil" data-screen-label="hero" style="position:relative;background:linear-gradient(165deg,#FBFAF6 0%,#F2F5EF 58%,#EEF3EE 100%);overflow:hidden">
+    <div style="position:absolute;top:-130px;right:-120px;width:440px;height:440px;border-radius:50%;background:radial-gradient(circle,rgba(242,113,28,.10),transparent 70%)"></div>
+    <div style="position:absolute;bottom:-170px;left:-110px;width:480px;height:480px;border-radius:50%;background:radial-gradient(circle,rgba(21,122,60,.09),transparent 70%)"></div>
+    <div style="position:relative;max-width:1240px;margin:0 auto;padding:88px 32px;display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;z-index:1">
+      <div>
+        <div style="display:inline-flex;align-items:center;gap:10px;background:rgba(21,122,60,.10);border:1px solid rgba(21,122,60,.20);color:#157A3C;font-weight:700;font-size:13px;letter-spacing:.07em;text-transform:uppercase;padding:8px 16px;border-radius:40px;margin-bottom:26px">Transport & logistique · Côte d'Ivoire</div>
+        <h1 style="font-family:'Archivo',sans-serif;font-weight:800;color:#1c2730;font-size:58px;line-height:1.06;letter-spacing:-.02em;text-wrap:balance">Votre marchandise, livrée avec la rigueur d'une mère.</h1>
+        <p style="color:#5a6470;font-size:19px;line-height:1.65;margin-top:24px;max-width:520px">De l'enlèvement à la livraison du dernier kilomètre, MAMAN MERCI TRANSPORT achemine vos flux sur tout le territoire ivoirien et la sous-région avec fiabilité, traçabilité et soin.</p>
+        <div style="display:flex;gap:14px;margin-top:38px;flex-wrap:wrap">
+          <a href="#contact" style="background:#F2711C;color:#fff;text-decoration:none;font-weight:700;font-size:16px;padding:16px 30px;border-radius:12px;box-shadow:0 14px 30px rgba(242,113,28,.22)">Obtenir un devis</a>
+          <a href="#services" style="background:#fff;border:1px solid #e6e3db;color:#1c2730;text-decoration:none;font-weight:700;font-size:16px;padding:16px 30px;border-radius:12px;box-shadow:0 6px 18px rgba(22,33,43,.05)">Découvrir nos services</a>
+        </div>
+      </div>
+      <div style="position:relative;border-radius:22px;overflow:hidden;min-height:440px;height:460px;border:1px solid #e7e4dc;box-shadow:0 26px 60px rgba(22,33,43,.10)">
+        <img src="assets/flotte-mmt2.png" alt="Flotte MAMAN MERCI TRANSPORT" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 40%">
+        <div style="position:absolute;left:0;right:0;bottom:0;background:linear-gradient(transparent,rgba(15,23,30,.74));padding:28px;pointer-events:none">
+          <div style="color:#fff;font-family:'Archivo',sans-serif;font-weight:700;font-size:20px;line-height:1.25">Une flotte récente, suivie en temps réel.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS BAND -->
+  <section style="background:#2E8B52;color:#fff">
+    <div style="max-width:1240px;margin:0 auto;padding:38px 32px;display:grid;grid-template-columns:repeat(4,1fr);gap:24px">
+      <div style="text-align:center;border-right:1px solid rgba(255,255,255,.18)">
+        <div style="font-family:'Archivo',sans-serif;font-weight:800;font-size:42px;line-height:1">15<span style="color:#F9C9A6">+</span></div>
+        <div style="font-size:14px;opacity:.9;margin-top:6px;letter-spacing:.02em">ans d'expérience</div>
+      </div>
+      <div style="text-align:center;border-right:1px solid rgba(255,255,255,.18)">
+        <div style="font-family:'Archivo',sans-serif;font-weight:800;font-size:42px;line-height:1">250<span style="color:#F9C9A6">+</span></div>
+        <div style="font-size:14px;opacity:.9;margin-top:6px;letter-spacing:.02em">véhicules en flotte</div>
+      </div>
+      <div style="text-align:center;border-right:1px solid rgba(255,255,255,.18)">
+        <div style="font-family:'Archivo',sans-serif;font-weight:800;font-size:42px;line-height:1">12k<span style="color:#F9C9A6">+</span></div>
+        <div style="font-size:14px;opacity:.9;margin-top:6px;letter-spacing:.02em">livraisons / mois</div>
+      </div>
+      <div style="text-align:center">
+        <div style="font-family:'Archivo',sans-serif;font-weight:800;font-size:42px;line-height:1">98<span style="color:#F9C9A6">%</span></div>
+        <div style="font-size:14px;opacity:.9;margin-top:6px;letter-spacing:.02em">de ponctualité</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" data-screen-label="services" style="background:#F6F5F1;padding:96px 32px">
+    <div style="max-width:1240px;margin:0 auto">
+      <div style="max-width:640px;margin-bottom:54px">
+        <div style="color:#157A3C;font-weight:700;font-size:13px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:14px">Nos services</div>
+        <h2 style="font-family:'Archivo',sans-serif;font-weight:800;font-size:42px;line-height:1.08;letter-spacing:-.02em">Une chaîne logistique complète, de bout en bout.</h2>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:22px">
+
+        <div style="background:#fff;border:1px solid #eceae3;border-radius:16px;padding:32px 26px;display:flex;flex-direction:column;transition:transform .2s" style-hover="transform:translateY(-4px)">
+          <div style="width:52px;height:52px;border-radius:16px;background:rgba(21,122,60,.1);display:flex;align-items:center;justify-content:center;color:#157A3C;font-size:24px;margin-bottom:22px">🚛</div>
+          <h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:21px;margin-bottom:12px">Transport routier national</h3>
+          <p style="color:#5a6470;font-size:15px;line-height:1.6">Acheminement fiable de vos marchandises sur l'ensemble du territoire ivoirien, en charge complète ou groupée.</p>
+        </div>
+
+        <div style="background:#fff;border:1px solid #eceae3;border-radius:16px;padding:32px 26px;display:flex;flex-direction:column;transition:transform .2s" style-hover="transform:translateY(-4px)">
+          <div style="width:52px;height:52px;border-radius:16px;background:rgba(242,113,28,.12);display:flex;align-items:center;justify-content:center;color:#F2711C;font-size:24px;margin-bottom:22px">🌍</div>
+          <h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:21px;margin-bottom:12px">Fret sous-régional</h3>
+          <p style="color:#5a6470;font-size:15px;line-height:1.6">Solutions transfrontalières au sein de l'espace UEMOA : Mali, Burkina Faso, Ghana, Guinée.</p>
+        </div>
+
+        <div style="background:#fff;border:1px solid #eceae3;border-radius:16px;padding:32px 26px;display:flex;flex-direction:column;transition:transform .2s" style-hover="transform:translateY(-4px)">
+          <div style="width:52px;height:52px;border-radius:16px;background:rgba(21,122,60,.1);display:flex;align-items:center;justify-content:center;color:#157A3C;font-size:24px;margin-bottom:22px">📦</div>
+          <h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:21px;margin-bottom:12px">Entreposage & distribution</h3>
+          <p style="color:#5a6470;font-size:15px;line-height:1.6">Stockage sécurisé, préparation de commandes et distribution du dernier kilomètre en milieu urbain.</p>
+        </div>
+
+        <div style="background:#fff;border:1px solid #eceae3;border-radius:16px;padding:32px 26px;display:flex;flex-direction:column;transition:transform .2s" style-hover="transform:translateY(-4px)">
+          <div style="width:52px;height:52px;border-radius:16px;background:rgba(242,113,28,.12);display:flex;align-items:center;justify-content:center;color:#F2711C;font-size:24px;margin-bottom:22px">❄️</div>
+          <h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:21px;margin-bottom:12px">Transport spécialisé</h3>
+          <p style="color:#5a6470;font-size:15px;line-height:1.6">Produits sensibles, vrac et marchandises sous température dirigée, avec protocoles adaptés.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTEURS -->
+  <section id="secteurs" data-screen-label="secteurs" style="background:#fff;padding:96px 32px">
+    <div style="max-width:1240px;margin:0 auto">
+      <div style="display:grid;grid-template-columns:1.1fr 1fr;gap:64px;align-items:center">
+        <div>
+          <div style="color:#157A3C;font-weight:700;font-size:13px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:14px">Secteurs d'activité</div>
+          <h2 style="font-family:'Archivo',sans-serif;font-weight:800;font-size:40px;line-height:1.1;letter-spacing:-.02em;margin-bottom:20px">Une expertise au service de chaque filière.</h2>
+          <p style="color:#5a6470;font-size:17px;line-height:1.65;margin-bottom:34px">Nous concevons des solutions de transport adaptées aux contraintes spécifiques de votre secteur, de la cargaison agricole aux équipements industriels.</p>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
+            <div style="display:flex;align-items:center;gap:12px;background:#F6F5F1;border-radius:6px;padding:16px 18px;font-weight:600;font-size:15px"><span style="color:#157A3C">◆</span> Agroalimentaire</div>
+            <div style="display:flex;align-items:center;gap:12px;background:#F6F5F1;border-radius:6px;padding:16px 18px;font-weight:600;font-size:15px"><span style="color:#F2711C">◆</span> Industrie & BTP</div>
+            <div style="display:flex;align-items:center;gap:12px;background:#F6F5F1;border-radius:6px;padding:16px 18px;font-weight:600;font-size:15px"><span style="color:#157A3C">◆</span> Grande distribution</div>
+            <div style="display:flex;align-items:center;gap:12px;background:#F6F5F1;border-radius:6px;padding:16px 18px;font-weight:600;font-size:15px"><span style="color:#F2711C">◆</span> Biens de consommation</div>
+            <div style="display:flex;align-items:center;gap:12px;background:#F6F5F1;border-radius:6px;padding:16px 18px;font-weight:600;font-size:15px"><span style="color:#157A3C">◆</span> Énergie & mines</div>
+            <div style="display:flex;align-items:center;gap:12px;background:#F6F5F1;border-radius:6px;padding:16px 18px;font-weight:600;font-size:15px"><span style="color:#F2711C">◆</span> High-tech & e-commerce</div>
+          </div>
+        </div>
+        <div style="position:relative;border-radius:18px;overflow:hidden;min-height:440px;height:460px;border:1px solid #eceae3">
+          <img src="assets/flotte-mmt2.png" alt="Flotte MAMAN MERCI TRANSPORT" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 40%">
+          <div style="position:absolute;left:0;right:0;bottom:0;background:linear-gradient(transparent,rgba(15,23,30,.88));padding:30px;pointer-events:none">
+            <div style="color:#fff;font-family:'Archivo',sans-serif;font-weight:700;font-size:22px;line-height:1.2">« Chaque palette compte. »</div>
+            <div style="color:#cdd3d8;font-size:14px;margin-top:6px">Manutention soignée, traçabilité à chaque étape.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- POURQUOI / APROPOS -->
+  <section id="apropos" data-screen-label="pourquoi" style="background:#F6F5F1;padding:96px 32px">
+    <div style="max-width:1240px;margin:0 auto">
+      <div style="max-width:640px;margin-bottom:54px">
+        <div style="color:#157A3C;font-weight:700;font-size:13px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:14px">Pourquoi MAMAN MERCI</div>
+        <h2 style="font-family:'Archivo',sans-serif;font-weight:800;font-size:42px;line-height:1.08;letter-spacing:-.02em">L'engagement d'un partenaire de confiance.</h2>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:22px">
+        <div style="background:#fff;border-radius:16px;padding:30px;border-top:3px solid #157A3C">
+          <div style="font-family:'Archivo',sans-serif;font-weight:800;font-size:15px;color:#F2711C;letter-spacing:.1em">01</div>
+          <h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:19px;margin:14px 0 10px">Ponctualité</h3>
+          <p style="color:#5a6470;font-size:14.5px;line-height:1.6">Des délais tenus et des engagements respectés, sur chaque expédition.</p>
+        </div>
+        <div style="background:#fff;border-radius:16px;padding:30px;border-top:3px solid #F2711C">
+          <div style="font-family:'Archivo',sans-serif;font-weight:800;font-size:15px;color:#F2711C;letter-spacing:.1em">02</div>
+          <h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:19px;margin:14px 0 10px">Flotte géolocalisée</h3>
+          <p style="color:#5a6470;font-size:14.5px;line-height:1.6">Véhicules récents et suivi GPS en temps réel de vos marchandises.</p>
+        </div>
+        <div style="background:#fff;border-radius:16px;padding:30px;border-top:3px solid #157A3C">
+          <div style="font-family:'Archivo',sans-serif;font-weight:800;font-size:15px;color:#F2711C;letter-spacing:.1em">03</div>
+          <h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:19px;margin:14px 0 10px">Équipes formées</h3>
+          <p style="color:#5a6470;font-size:14.5px;line-height:1.6">Chauffeurs et logisticiens certifiés, attentifs à la sécurité du fret.</p>
+        </div>
+        <div style="background:#fff;border-radius:16px;padding:30px;border-top:3px solid #F2711C">
+          <div style="font-family:'Archivo',sans-serif;font-weight:800;font-size:15px;color:#F2711C;letter-spacing:.1em">04</div>
+          <h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:19px;margin:14px 0 10px">Couverture étendue</h3>
+          <p style="color:#5a6470;font-size:14.5px;line-height:1.6">Présence nationale et corridors sous-régionaux maîtrisés.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESEAU -->
+  <section id="reseau" data-screen-label="reseau" style="background:#EEF2EC;color:#1c2730;padding:96px 32px">
+    <div style="max-width:1240px;margin:0 auto;display:grid;grid-template-columns:1fr 1.05fr;gap:64px;align-items:center">
+      <div>
+        <div style="color:#157A3C;font-weight:700;font-size:13px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:14px">Notre réseau</div>
+        <h2 style="font-family:'Archivo',sans-serif;font-weight:800;font-size:40px;line-height:1.1;letter-spacing:-.02em;margin-bottom:20px">Un maillage qui couvre tout le pays.</h2>
+        <p style="color:#5a6470;font-size:17px;line-height:1.65;margin-bottom:36px">Quatre plateformes stratégiques nous permettent de desservir rapidement les principaux bassins économiques et les ports.</p>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px">
+          <div style="border-left:3px solid #157A3C;padding-left:16px"><div style="font-family:'Archivo',sans-serif;font-weight:700;font-size:20px">Abidjan</div><div style="color:#7c8690;font-size:14px">Siège & hub principal</div></div>
+          <div style="border-left:3px solid #F2711C;padding-left:16px"><div style="font-family:'Archivo',sans-serif;font-weight:700;font-size:20px">Bouaké</div><div style="color:#7c8690;font-size:14px">Plateforme centre</div></div>
+          <div style="border-left:3px solid #F2711C;padding-left:16px"><div style="font-family:'Archivo',sans-serif;font-weight:700;font-size:20px">San-Pédro</div><div style="color:#7c8690;font-size:14px">Liaison portuaire</div></div>
+          <div style="border-left:3px solid #157A3C;padding-left:16px"><div style="font-family:'Archivo',sans-serif;font-weight:700;font-size:20px">Korhogo</div><div style="color:#7c8690;font-size:14px">Corridor nord</div></div>
+        </div>
+      </div>
+      <div style="position:relative;border-radius:22px;overflow:hidden;min-height:400px;height:420px;border:1px solid #dde1d6;box-shadow:0 20px 50px rgba(22,33,43,.08)">
+        <img src="assets/flotte-mmt2.png" alt="Flotte MAMAN MERCI TRANSPORT" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 40%">
+      </div>
+    </div>
+  </section>
+
+  <!-- TEMOIGNAGE -->
+  <section style="background:#fff;padding:84px 32px">
+    <div style="max-width:880px;margin:0 auto;text-align:center">
+      <div style="font-size:48px;color:#F2711C;font-family:'Archivo',sans-serif;line-height:.6">“</div>
+      <p style="font-family:'Archivo',sans-serif;font-weight:600;font-size:28px;line-height:1.4;letter-spacing:-.01em;margin:14px 0 28px;text-wrap:balance">Depuis que nous avons confié notre distribution à MAMAN MERCI TRANSPORT, nos livraisons arrivent à l'heure et nos clients le ressentent.</p>
+      <div style="font-weight:700;font-size:16px">Directrice Logistique</div>
+      <div style="color:#8b949c;font-size:14px">Groupe agroalimentaire · Abidjan</div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="contact" data-screen-label="cta" style="padding:0 32px 84px">
+    <div style="max-width:1240px;margin:0 auto;background:#157A3C;border-radius:14px;padding:64px 56px;position:relative;overflow:hidden">
+      <div style="position:absolute;right:-40px;top:-40px;width:280px;height:280px;border-radius:50%;background:rgba(242,113,28,.18)"></div>
+      <div style="position:absolute;right:90px;bottom:-70px;width:200px;height:200px;border-radius:50%;background:rgba(255,255,255,.06)"></div>
+      <div style="position:relative;display:flex;justify-content:space-between;align-items:center;gap:40px;flex-wrap:wrap">
+        <div style="max-width:600px">
+          <h2 style="font-family:'Archivo',sans-serif;font-weight:800;color:#fff;font-size:38px;line-height:1.1;letter-spacing:-.02em">Confiez-nous votre logistique.</h2>
+          <p style="color:#d7ecdf;font-size:17px;margin-top:14px;line-height:1.6">Recevez une proposition adaptée sous 24h. Nos équipes étudient vos volumes, vos délais et vos contraintes.</p>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:12px;min-width:240px">
+          <a href="#" style="background:#F2711C;color:#fff;text-decoration:none;font-weight:700;font-size:16px;padding:16px 28px;border-radius:12px;text-align:center;box-shadow:0 10px 26px rgba(0,0,0,.18)">Demander un devis</a>
+          <a href="#" style="background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.35);color:#fff;text-decoration:none;font-weight:700;font-size:16px;padding:16px 28px;border-radius:12px;text-align:center">Nous appeler · +225 27 20 00 00 00</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer style="background:#1d2832;color:#9aa2aa;padding:64px 32px 32px">
+    <div style="max-width:1240px;margin:0 auto">
+      <div style="display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:40px;padding-bottom:48px;border-bottom:1px solid #232d35">
+        <div>
+          <div style="font-family:'Archivo',sans-serif;font-weight:900;font-size:26px;letter-spacing:-.01em;margin-bottom:4px"><span style="color:#157A3C">MAMAN</span> <span style="color:#F2711C">MERCI</span></div>
+          <div style="font-family:'Archivo',sans-serif;font-weight:600;letter-spacing:.42em;font-size:13px;color:#5f6a73;margin-bottom:20px">TRANSPORT</div>
+          <p style="font-size:14.5px;line-height:1.65;max-width:340px">Transport routier, fret et logistique en Côte d'Ivoire et dans la sous-région ouest-africaine.</p>
+        </div>
+        <div>
+          <div style="color:#fff;font-weight:700;font-size:15px;margin-bottom:16px">Services</div>
+          <div style="display:flex;flex-direction:column;gap:11px;font-size:14.5px">
+            <a href="#services" style="color:#9aa2aa;text-decoration:none">Transport routier</a>
+            <a href="#services" style="color:#9aa2aa;text-decoration:none">Fret sous-régional</a>
+            <a href="#services" style="color:#9aa2aa;text-decoration:none">Entreposage</a>
+            <a href="#services" style="color:#9aa2aa;text-decoration:none">Transport spécialisé</a>
+          </div>
+        </div>
+        <div>
+          <div style="color:#fff;font-weight:700;font-size:15px;margin-bottom:16px">Entreprise</div>
+          <div style="display:flex;flex-direction:column;gap:11px;font-size:14.5px">
+            <a href="#apropos" style="color:#9aa2aa;text-decoration:none">À propos</a>
+            <a href="#reseau" style="color:#9aa2aa;text-decoration:none">Notre réseau</a>
+            <a href="#secteurs" style="color:#9aa2aa;text-decoration:none">Secteurs</a>
+            <a href="#contact" style="color:#9aa2aa;text-decoration:none">Carrières</a>
+          </div>
+        </div>
+        <div>
+          <div style="color:#fff;font-weight:700;font-size:15px;margin-bottom:16px">Contact</div>
+          <div style="display:flex;flex-direction:column;gap:11px;font-size:14.5px">
+            <span>Zone industrielle de Yopougon, Abidjan</span>
+            <span>+225 27 20 00 00 00</span>
+            <span>contact@mamanmerci-transport.ci</span>
+          </div>
+        </div>
+      </div>
+      <div style="display:flex;justify-content:space-between;align-items:center;padding-top:24px;font-size:13px;flex-wrap:wrap;gap:12px">
+        <span>© 2026 MAMAN MERCI TRANSPORT. Tous droits réservés.</span>
+        <div style="display:flex;gap:22px">
+          <a href="#" style="color:#9aa2aa;text-decoration:none">Mentions légales</a>
+          <a href="#" style="color:#9aa2aa;text-decoration:none">Confidentialité</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</div>
+</x-dc>
+</body>
+</html>

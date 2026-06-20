@@ -1,0 +1,8 @@
+services:
+  mmt-vitrine:
+    build:
+      context: .
+    container_name: mmt-vitrine
+    restart: unless-stopped
+    ports:
+      - "${MMT_PORT:-8088}:80"
